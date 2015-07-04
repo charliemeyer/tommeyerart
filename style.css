@@ -4,8 +4,8 @@ body {
 }
 
 img {
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
 }
 
 .shadow1 {
@@ -14,4 +14,8 @@ img {
 
 .shadow2 {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#content {
+    margin-bottom: 50px;
 }
