@@ -1,7 +1,10 @@
 body {
     font-family: 'Roboto';
     text-align: center;
-    text-transform: lowercase;
+}
+
+.ui-corner-all {
+    border-radius: 0px !important;
 }
 
 .shadow1 {
@@ -46,7 +49,7 @@ footer {
 }
 
 .photoboxL {
-    text-align: left;
+    text-align: center;
     margin: 25px 0px;
     float: left;
     height: 225px;
@@ -62,7 +65,7 @@ footer {
 }
 
 .photoboxR {
-    text-align: right;
+    text-align: center;
     margin: 25px 0px;
     float: left;
     height: 225px;
@@ -79,4 +82,5 @@ footer {
 
 img {
     height: 100%;
+    margin: 0 auto;
 }

@@ -1,4 +1,44 @@
-img {
+#studio {
     height: 300px;
+}
+
+.photoboxL {
+    text-align: center;
+    margin: 25px 0px;
+    float: none;
+    height: auto;
+    width: 90%;
+}
+
+.photoboxM {
+    text-align: center;
+    margin: 25px 0px;
+    float: none;
+    height: auto;
+    width: 90%;
+}
+
+.photoboxR {
+    text-align: center;
+    margin: 25px 0px;
+    float: none;
+    height: auto;
+    width: 90%;
+}
+
+.photoboxS {
+    text-align: center;
+    margin: 25px 0px;
+    float: none;
+    height: auto;
+    width: 90%;
+}
+
+img {
     width: 300px;
+    height: auto;
+}
+
+#gallery{
+    min-width: 0px;
 }
