@@ -20,7 +20,7 @@ body {
 }
 
 #gallery {
-    min-width: 1000px;
+    min-width: 800px;
     width: 90%;
     max-width: 1300px;
     margin: 30px auto;
@@ -70,6 +70,14 @@ footer {
     float: left;
     height: 200px;
     width: 48%;
+}
+
+.photoboxWW {
+    text-align: center;
+    margin: 25px 0px;
+    float: left;
+    height: 200px;
+    width: 100%;
 }
 
 img {
