@@ -1,92 +1,1190 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" media="(max-width: 600px)" type="text/css" href="mobilestyle.css">
-<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="static/style.css">
+<!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+
+<link rel="stylesheet" href="static/photoswipe.css"> 
+<!-- Skin CSS file (styling of UI - buttons, caption, etc.) -->
+<link rel="stylesheet" href="static/default-skin/default-skin.css"> 
+<!-- Core JS file -->
+<script src="static/photoswipe.min.js"></script> 
+<!-- UI JS file -->
+<script src="static/photoswipe-ui-default.min.js"></script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/south-street/jquery-ui.css" id="theme">
-<link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
-<script src="script.js"></script>
+
 <meta name="viewport" content="width=device-width, user-scalable=no">
 <title>Tom Meyer Art</title>
 </head>
 
 <body>
 <div id='content'>
-<!-- The dialog widget -->
-    <div id="blueimp-gallery-dialog" data-show="fade" data-hide="fade">
-        <!-- The gallery widget  -->
-        <div style='vertical-align: middle;' class="blueimp-gallery blueimp-gallery-carousel blueimp-gallery-controls">
-            <div class="slides"></div>
-            <a class="prev" style='font-size: 100%;'>&lt;</a>
-            <a class="next" style='font-size: 100%;'>&gt;</a>
-            <a class="play-pause"></a>
-        </div>
-    </div>
     <h1>Tom Meyer Art</h1>
     <p>Pembroke, MA</p>
     <h4>Contact: <a href='mailto:tommeyerart@gmail.com'>tommeyerart@gmail.com</a></h4>
-    <img id='studio' class='shadow2' src='images/studio.jpg' alt='studio'/><br>
-    <i>(click images to expand)</i>
-    <div id='gallery'>
-        <div class='photobox'><a href='images/01.jpg' data-dialog><img class='shadow2' src='thumbs/01.jpg' alt='1'/></a></div>
-        <div class='photobox'><a href='images/02.jpg' data-dialog><img class='shadow2' src='thumbs/02.jpg' alt='2'/></a></div>
-        <div class='photobox'><a href='images/04.jpg' data-dialog><img class='shadow2' src='thumbs/04.jpg' alt='4'/></a></div>
-        <div class='photobox'><a href='images/05.jpg' data-dialog><img class='shadow2' src='thumbs/05.jpg' alt='5'/></a></div>
-        <div class='photobox'><a href='images/06.jpg' data-dialog><img class='shadow2' src='thumbs/06.jpg' alt='6'/></a></div>
-        <div class='photobox'><a href='images/07.jpg' data-dialog><img class='shadow2' src='thumbs/07.jpg' alt='7'/></a></div>
-        <div class='photobox'><a href='images/08.jpg' data-dialog><img class='shadow2' src='thumbs/08.jpg' alt='8'/></a></div>
-        <div class='photobox'><a href='images/09.jpg' data-dialog><img class='shadow2' src='thumbs/09.jpg' alt='9'/></a></div>
-        <div class='photobox'><a href='images/10.jpg' data-dialog><img class='shadow2' src='thumbs/10.jpg' alt='10'/></a></div>
-        <div class='photobox'><a href='images/11.jpg' data-dialog><img class='shadow2' src='thumbs/11.jpg' alt='11'/></a></div>
-        <div class='photobox'><a href='images/12.jpg' data-dialog><img class='shadow2' src='thumbs/12.jpg' alt='12'/></a></div>
-        <div class='photobox'><a href='images/13.jpg' data-dialog><img class='shadow2' src='thumbs/13.jpg' alt='13'/></a></div>
-        <div class='photobox'><a href='images/14.jpg' data-dialog><img class='shadow2' src='thumbs/14.jpg' alt='14'/></a></div>
-        <div class='photobox'><a href='images/15.jpg' data-dialog><img class='shadow2' src='thumbs/15.jpg' alt='15'/></a></div>
-        <div class='photobox'><a href='images/16.jpg' data-dialog><img class='shadow2' src='thumbs/16.jpg' alt='16'/></a></div>
-        <div class='photoboxW'><a href='images/17.jpg' data-dialog><img class='shadow2' src='thumbs/17.jpg' alt='17'/></a></div>
-        <div class='photoboxW'><a href='images/19.jpg' data-dialog><img class='shadow2' src='thumbs/19.jpg' alt='19'/></a></div>
-        <div class='photobox'><a href='images/20.jpg' data-dialog><img class='shadow2' src='thumbs/20.jpg' alt='20'/></a></div>
-        <div class='photobox'><a href='images/21.jpg' data-dialog><img class='shadow2' src='thumbs/21.jpg' alt='21'/></a></div>
-        <div class='photobox'><a href='images/22.jpg' data-dialog><img class='shadow2' src='thumbs/22.jpg' alt='22'/></a></div>
-        <div class='photobox'><a href='images/23.jpg' data-dialog><img class='shadow2' src='thumbs/23.jpg' alt='23'/></a></div>
-        <div class='photobox'><a href='images/24.jpg' data-dialog><img class='shadow2' src='thumbs/24.jpg' alt='24'/></a></div>
-        <div class='photobox'><a href='images/25.jpg' data-dialog><img class='shadow2' src='thumbs/25.jpg' alt='25'/></a></div>
-        <div class='photobox'><a href='images/27.jpg' data-dialog><img class='shadow2' src='thumbs/27.jpg' alt='27'/></a></div>
-        <div class='photobox'><a href='images/51.jpg' data-dialog><img class='shadow2' src='thumbs/51.jpg' alt='51'/></a></div>
-        <div class='photobox'><a href='images/18.jpg' data-dialog><img class='shadow2' src='thumbs/18.jpg' alt='18'/></a></div>
-        <div class='photoboxWW'><a href='images/39.jpg' data-dialog><img class='shadow2' src='thumbs/39.jpg' alt='39'/></a></div>
-        <div class='photoboxWW'><a href='images/40.jpg' data-dialog><img class='shadow2' src='thumbs/40.jpg' alt='40'/></a></div>
-        <div class='photoboxW'><a href='images/41.jpg' data-dialog><img class='shadow2' src='thumbs/41.jpg' alt='41'/></a></div>
-        <div class='photoboxW'><a href='images/42.jpg' data-dialog><img class='shadow2' src='thumbs/42.jpg' alt='42'/></a></div>
-        <div class='photoboxW'><a href='images/43.jpg' data-dialog><img class='shadow2' src='thumbs/43.jpg' alt='43'/></a></div>
-        <div class='photoboxW'><a href='images/44.jpg' data-dialog><img class='shadow2' src='thumbs/44.jpg' alt='44'/></a></div>
-        <div class='photobox'><a href='images/46.jpg' data-dialog><img class='shadow2' src='thumbs/46.jpg' alt='46'/></a></div>
-        <div class='photobox'><a href='images/45.jpg' data-dialog><img class='shadow2' src='thumbs/45.jpg' alt='45'/></a></div>
-        <div class='photobox'><a href='images/47.jpg' data-dialog><img class='shadow2' src='thumbs/47.jpg' alt='47'/></a></div>
-        <div class='photobox'><a href='images/49.jpg' data-dialog><img class='shadow2' src='thumbs/49.jpg' alt='49'/></a></div>
-        <div class='photobox'><a href='images/48.jpg' data-dialog><img class='shadow2' src='thumbs/48.jpg' alt='48'/></a></div>
-        <div class='photobox'><a href='images/50.jpg' data-dialog><img class='shadow2' src='thumbs/50.jpg' alt='50'/></a></div>
-        <div class='photoboxS'><a href='images/28.jpg' data-dialog><img class='shadow2' src='thumbs/28.jpg' alt='28'/></a></div>
-        <div class='photoboxS'><a href='images/29.jpg' data-dialog><img class='shadow2' src='thumbs/29.jpg' alt='29'/></a></div>
-        <div class='photoboxS'><a href='images/26.jpg' data-dialog><img class='shadow2' src='thumbs/26.jpg' alt='26'/></a></div>
-        <div class='photoboxS'><a href='images/30.jpg' data-dialog><img class='shadow2' src='thumbs/30.jpg' alt='30'/></a></div>
-        <div class='photoboxS'><a href='images/31.jpg' data-dialog><img class='shadow2' src='thumbs/31.jpg' alt='31'/></a></div>
-        <div class='photoboxS'><a href='images/32.jpg' data-dialog><img class='shadow2' src='thumbs/32.jpg' alt='32'/></a></div>
-        <div class='photoboxS'><a href='images/33.jpg' data-dialog><img class='shadow2' src='thumbs/33.jpg' alt='33'/></a></div>
-        <div class='photoboxS'><a href='images/34.jpg' data-dialog><img class='shadow2' src='thumbs/34.jpg' alt='34'/></a></div>
-        <div class='photoboxS'><a href='images/35.jpg' data-dialog><img class='shadow2' src='thumbs/35.jpg' alt='35'/></a></div>
-        <div class='photoboxS'><a href='images/36.jpg' data-dialog><img class='shadow2' src='thumbs/36.jpg' alt='36'/></a></div>
-        <div class='photoboxS'><a href='images/37.jpg' data-dialog><img class='shadow2' src='thumbs/37.jpg' alt='37'/></a></div>
-        <div class='photoboxS'><a href='images/38.jpg' data-dialog><img class='shadow2' src='thumbs/38.jpg' alt='38'/></a></div>
+    <img id='studio' class='shadow2' src='static/studio2.jpg' alt='studio'/><br>
+    <b>(click images below to expand)</b>
+    <div id='mygall'>
+        <div id="demo-test-gallery" class="demo-gallery">
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/58.jpg" data-size="888x1200" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/58.jpg'/>
+          <figure>
+            &#34; collage on canvas<br>
+            12&#34; x 9<br>
+            2015
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/51.jpg" data-size="1200x872" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/51.jpg'/>
+          <figure>
+            acrylic and ink on paper<br>
+            22&#34; x 30&#34;<br>
+            2015
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/64.jpg" data-size="1200x758" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/64.jpg'/>
+          <figure>
+            collage on paper<br>
+            11&#34; x 17&#34;<br>
+            2013
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/55.jpg" data-size="1200x927" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/55.jpg'/>
+          <figure>
+            acrylic on canvas<br>
+            11&#34; x 14&#34;<br>
+            2016
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/48.jpg" data-size="1200x1200" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/48.jpg'/>
+          <figure>
+            collage on panel<br>
+            24&#34; x 24&#34;<br>
+            2012
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/10.jpg" data-size="1200x856" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/10.jpg'/>
+          <figure>
+            collage on paper<br>
+            22&#34; x 30&#34;<br>
+            2015
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/25.jpg" data-size="1186x1200" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/25.jpg'/>
+          <figure>
+            acrylic on panel<br>
+            24&#34; x 24&#34;<br>
+            2015
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/19.jpg" data-size="1200x882" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/19.jpg'/>
+          <figure>
+            acrylic and ink on paper<br>
+            22&#34; x 30&#34;<br>
+            2015
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/14.jpg" data-size="1200x885" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/14.jpg'/>
+          <figure>
+            acrylic and ink on paper<br>
+            22&#34; x 30&#34;<br>
+            2015
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/53.jpg" data-size="1200x907" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/53.jpg'/>
+          <figure>
+            acrylic on canvas<br>
+            18&#34; x 24&#34;<br>
+            2016
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/52.jpg" data-size="1200x879" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/52.jpg'/>
+          <figure>
+            acrylic on canvas<br>
+            18&#34; x 24&#34;<br>
+            2016
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/13.jpg" data-size="1200x952" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/13.jpg'/>
+          <figure>
+            acrylic and ink on paper<br>
+            16&#34; x 20&#34;<br>
+            2007
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/11.jpg" data-size="1200x893" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/11.jpg'/>
+          <figure>
+            acrylic on paper<br>
+            44&#34; x 60&#34;<br>
+            2015
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/44.jpg" data-size="1200x531" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/44.jpg'/>
+          <figure>
+            acrylic on panel<br>
+            22&#34; x 49&#34;<br>
+            2015
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/18.jpg" data-size="933x1200" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/18.jpg'/>
+          <figure>
+            acrylic on canvas<br>
+            28&#34; x 22&#34;<br>
+            1996
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/67.jpg" data-size="1200x767" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/67.jpg'/>
+          <figure>
+            collage on paper<br>
+            11&#34; x 17&#34;<br>
+            2013
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/01.jpg" data-size="1199x1200" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/01.jpg'/>
+          <figure>
+            acrylic on canvas<br>
+            24&#34; x 24&#34;<br>
+            2014
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/08.jpg" data-size="1200x879" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/08.jpg'/>
+          <figure>
+            acrylic and ink on paper<br>
+            22&#34; x 30&#34;<br>
+            2015
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/70.jpg" data-size="1200x729" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/70.jpg'/>
+          <figure>
+            acrylic on canvas<br>
+            30&#34; x 48&#34;<br>
+            2016
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/04.jpg" data-size="1200x1181" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/04.jpg'/>
+          <figure>
+            acrylic on panel<br>
+            24&#34; x 24&#34;<br>
+            2015
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/21.jpg" data-size="1200x821" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/21.jpg'/>
+          <figure>
+            acrylic on canvas<br>
+            34&#34; x 49&#34;<br>
+            2006
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/62.jpg" data-size="1200x1009" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/62.jpg'/>
+          <figure>
+            collage on paper<br>
+            14&#34; x 17&#34;<br>
+            2015
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/17.jpg" data-size="1200x691" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/17.jpg'/>
+          <figure>
+            acrylic on canvas on board<br>
+            12&#34; x 20&#34;<br>
+            1996
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/02.jpg" data-size="1191x1200" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/02.jpg'/>
+          <figure>
+            acrylic on canvas<br>
+            32&#34; x 32&#34;<br>
+            2013
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/39.jpg" data-size="1200x448" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/39.jpg'/>
+          <figure>
+            mixed media on canvas<br>
+            24&#34; x 62&#34;<br>
+            2014
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/73.jpg" data-size="1200x874" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/73.jpg'/>
+          <figure>
+            collage on paper<br>
+            22&#34; x 30&#34;<br>
+            2016
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/41.jpg" data-size="1200x585" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/41.jpg'/>
+          <figure>
+            collage on panel<br>
+            24&#34; x 48&#34;<br>
+            2013
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/60.jpg" data-size="923x1200" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/60.jpg'/>
+          <figure>
+            acrylic on paper<br>
+            14&#34; x 11&#34;<br>
+            2003
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/65.jpg" data-size="1200x758" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/65.jpg'/>
+          <figure>
+            collage on paper<br>
+            11&#34; x 17&#34;<br>
+            2013
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/20.jpg" data-size="1200x883" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/20.jpg'/>
+          <figure>
+            acrylic and ink on paper<br>
+            22&#34; x 30&#34;<br>
+            2015
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/12.jpg" data-size="1200x1200" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/12.jpg'/>
+          <figure>
+            mixed media on panel<br>
+            48&#34; x 48&#34;<br>
+            2016
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/56.jpg" data-size="1200x808" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/56.jpg'/>
+          <figure>
+            mixed media on paper<br>
+            30&#34; x 44&#34;<br>
+            2016
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/16.jpg" data-size="1200x876" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/16.jpg'/>
+          <figure>
+            collage on paper<br>
+            22&#34; x 30&#34;<br>
+            2015
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/23.jpg" data-size="1200x871" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/23.jpg'/>
+          <figure>
+            acrylic and ink on paper<br>
+            22&#34; x 30&#34;<br>
+            2015
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/59.jpg" data-size="794x1200" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/59.jpg'/>
+          <figure>
+            acrylic on paper<br>
+            22&#34; x 16&#34;<br>
+            2008
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/15.jpg" data-size="1200x804" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/15.jpg'/>
+          <figure>
+            acrylic on panel<br>
+            48&#34; x 70&#34;<br>
+            2015
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/09.jpg" data-size="1200x870" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/09.jpg'/>
+          <figure>
+            acrylic and ink on paper<br>
+            22&#34; x 30&#34;<br>
+            2015
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/71.jpg" data-size="1200x1200" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/71.jpg'/>
+          <figure>
+            mixed media on panel<br>
+            48&#34; x 48&#34;<br>
+            2016
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/63.jpg" data-size="1200x891" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/63.jpg'/>
+          <figure>
+            acrylic on paper<br>
+            22&#34; x 30&#34;<br>
+            2015
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/57.jpg" data-size="1200x889" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/57.jpg'/>
+          <figure>
+            acrylic on canvas<br>
+            36&#34; x 48&#34;<br>
+            2016
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/66.jpg" data-size="1200x876" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/66.jpg'/>
+          <figure>
+            collage on paper<br>
+            11&#34; x 17&#34;<br>
+            2013
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/27.jpg" data-size="1200x917" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/27.jpg'/>
+          <figure>
+            watercolor on paper<br>
+            9&#34; x 12&#34;<br>
+            2009
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/06.jpg" data-size="1200x789" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/06.jpg'/>
+          <figure>
+            acrylic on canvas<br>
+            24&#34; x 36&#34;<br>
+            2005
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/49.jpg" data-size="1200x880" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/49.jpg'/>
+          <figure>
+            acrylic and ink on paper<br>
+            22&#34; x 30&#34;<br>
+            2015
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/68.jpg" data-size="1200x913" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/68.jpg'/>
+          <figure>
+            pencil on paper<br>
+            11&#34; x 8.5&#34;<br>
+            2015
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/24.jpg" data-size="1200x899" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/24.jpg'/>
+          <figure>
+            acrylic and ink on paper<br>
+            22&#34; x 30&#34;<br>
+            2015
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/46.jpg" data-size="1200x1200" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/46.jpg'/>
+          <figure>
+            acrylic and ink on panel<br>
+            24&#34; x 24&#34;<br>
+            2015
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/54.jpg" data-size="1200x872" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/54.jpg'/>
+          <figure>
+            collage on paper<br>
+            22&#34; x 30&#34;<br>
+            2016
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/42.jpg" data-size="1200x534" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/42.jpg'/>
+          <figure>
+            acrylic on panel<br>
+            22&#34; x 49&#34;<br>
+            2015
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/03.jpg" data-size="1200x918" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/03.jpg'/>
+          <figure>
+            acrylic on panel<br>
+            26&#34; x 34&#34;<br>
+            2015
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/47.jpg" data-size="1200x1200" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/47.jpg'/>
+          <figure>
+            collage on panel<br>
+            24&#34; x 24&#34;<br>
+            2015
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/40.jpg" data-size="1200x442" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/40.jpg'/>
+          <figure>
+            mixed media on canvas<br>
+            24&#34; x 62&#34;<br>
+            2014
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/72.jpg" data-size="1200x819" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/72.jpg'/>
+          <figure>
+            mixed media on paper<br>
+            30&#34; x 44&#34;<br>
+            2016
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/43.jpg" data-size="1200x544" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/43.jpg'/>
+          <figure>
+            acrylic on panel<br>
+            22&#34; x 49&#34;<br>
+            2015
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/07.jpg" data-size="1200x903" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/07.jpg'/>
+          <figure>
+            acrylic on canvas<br>
+            24&#34; x 32&#34;<br>
+            1999
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/22.jpg" data-size="1200x857" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/22.jpg'/>
+          <figure>
+            acrylic and ink on paper<br>
+            22&#34; x 30&#34;<br>
+            2015
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/50.jpg" data-size="1200x874" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/50.jpg'/>
+          <figure>
+            collage on paper<br>
+            22&#34; x 30&#34;<br>
+            2015
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/45.jpg" data-size="1200x735" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/45.jpg'/>
+          <figure>
+            acrylic and ink on canvas<br>
+            31&#34; x 50&#34;<br>
+            2015
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/61.jpg" data-size="1200x355" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/61.jpg'/>
+          <figure>
+            acrylic on canvas<br>
+            27&#34; x 88&#34;<br>
+            2005
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/05.jpg" data-size="1149x902" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/05.jpg'/>
+          <figure>
+            acrylic on paper<br>
+            16&#34; x 20&#34;<br>
+            2007
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/31.jpg" data-size="926x1200" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/31.jpg'/>
+          <figure>
+            ink and crayon on paper<br>
+            11&#34; x 8.5&#34;<br>
+            2013
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/38.jpg" data-size="926x1200" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/38.jpg'/>
+          <figure>
+            ink and crayon on paper<br>
+            11&#34; x 8.5&#34;<br>
+            2013
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/37.jpg" data-size="926x1200" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/37.jpg'/>
+          <figure>
+            collage on paper<br>
+            11&#34; x 8.5&#34;<br>
+            2013
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/69.jpg" data-size="926x1200" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/69.jpg'/>
+          <figure>
+            ink on paper<br>
+            11&#34; x 8.5&#34;<br>
+            2016
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/32.jpg" data-size="926x1200" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/32.jpg'/>
+          <figure>
+            ink and crayon on paper<br>
+            11&#34; x 8.5&#34;<br>
+            2013
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/33.jpg" data-size="926x1200" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/33.jpg'/>
+          <figure>
+            ink and pencil on paper<br>
+            11&#34; x 8.5&#34;<br>
+            2013
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/29.jpg" data-size="926x1200" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/29.jpg'/>
+          <figure>
+            ink and crayon on paper<br>
+            11&#34; x 8.5&#34;<br>
+            2014
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/35.jpg" data-size="926x1200" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/35.jpg'/>
+          <figure>
+            ink and crayon on paper<br>
+            11&#34; x 8.5&#34;<br>
+            2013
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/28.jpg" data-size="926x1200" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/28.jpg'/>
+          <figure>
+            collage on paper<br>
+            11&#34; x 8.5&#34;<br>
+            2012
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/26.jpg" data-size="926x1200" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/26.jpg'/>
+          <figure>
+            ink and crayon on paper<br>
+            11&#34; x 8.5&#34;<br>
+            2013
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/30.jpg" data-size="926x1200" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/30.jpg'/>
+          <figure>
+            ink and crayon on paper<br>
+            11&#34; x 8.5&#34;<br>
+            2014
+          </figure>
+        <!-- </a></div> -->
+        </a>
+        
+        <!-- <div class='photobox'> -->
+          <a href="imgs/36.jpg" data-size="926x1200" class="demo-gallery__img--main photobox">
+          <img class='shadow2' src='thumbs/36.jpg'/>
+          <figure>
+            ink and crayon on paper<br>
+            11&#34; x 8.5&#34;<br>
+            2013
+          </figure>
+        <!-- </a></div> -->
+        </a>
         
     </div>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-    <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
-    <script src="galleryjs/js/jquery.image-gallery.js"></script>
-  <footer>&copy; Tom Meyer 2015</footer>
+
+<!--         <div id='mygall2'>
+
+          
+
+            <a href=""  data-author="Folkert Gorter" class=" photobox">
+              <img src="https://farm4.staticflickr.com/3894/15008518202_b016d7d289_m.jpg" alt="" />
+              <figure>This is dummy caption.</figure>
+            </a>
+
+        </div> -->
+
+        <div id="gallery" class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="pswp__bg"></div>
+
+            <div class="pswp__scroll-wrap">
+
+              <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+              </div>
+
+              <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                          <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- <div class="pswp__loading-indicator"><div class="pswp__loading-indicator__line"></div></div> -->
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip">
+                    <!-- share stuff maybe? -->
+                    </div>
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                <div class="pswp__caption">
+                  <div class="pswp__caption__center">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+        </div>
+        
+      
+        <script type="text/javascript">
+        $(document).ready(function(){
+            setContainerWidth();
+        });
+
+        $(window).resize(function(){
+           setContainerWidth();
+        });
+
+        function setContainerWidth()
+        {
+            $('#mygall').css('width', 'auto'); //reset
+            var windowWidth = $(document).width();
+            var blockWidth = $('.photobox').outerWidth(true);
+            var maxBoxPerRow = Math.floor(windowWidth / blockWidth);
+            $('#mygall').width(maxBoxPerRow * blockWidth);
+        }
+
+
+        (function() {
+
+            var initPhotoSwipeFromDOM = function(gallerySelector) {
+
+                var parseThumbnailElements = function(el) {
+                    var thumbElements = el.childNodes,
+                        numNodes = thumbElements.length,
+                        items = [],
+                        el,
+                        childElements,
+                        thumbnailEl,
+                        size,
+                        item;
+
+                    for(var i = 0; i < numNodes; i++) {
+                        el = thumbElements[i];
+
+                        // include only element nodes 
+                        if(el.nodeType !== 1) {
+                          continue;
+                        }
+
+                        childElements = el.children;
+
+                        size = el.getAttribute('data-size').split('x');
+
+                        // create slide object
+                        item = {
+                            src: el.getAttribute('href'),
+                            w: parseInt(size[0], 10),
+                            h: parseInt(size[1], 10),
+                        };
+
+                        item.el = el; // save link to element for getThumbBoundsFn
+
+                        if(childElements.length > 0) {
+                          item.msrc = childElements[0].getAttribute('src'); // thumbnail url
+                          if(childElements.length > 1) {
+                              item.title = childElements[1].innerHTML; // caption (contents of figure)
+                          }
+                        }
+
+
+                        // var mediumSrc = el.getAttribute('data-med');
+                        // if(mediumSrc) {
+                        //     size = el.getAttribute('data-med-size').split('x');
+                        //     // "medium-sized" image
+                        //     item.m = {
+                        //         src: mediumSrc,
+                        //         w: parseInt(size[0], 10),
+                        //         h: parseInt(size[1], 10)
+                        //     };
+                        // }
+                        // original image
+                        item.o = {
+                            src: item.src,
+                            w: item.w,
+                            h: item.h
+                        };
+
+                        items.push(item);
+                    }
+
+                    return items;
+                };
+
+                // find nearest parent element
+                var closest = function closest(el, fn) {
+                    return el && ( fn(el) ? el : closest(el.parentNode, fn) );
+                };
+
+                var onThumbnailsClick = function(e) {
+                    e = e || window.event;
+                    e.preventDefault ? e.preventDefault() : e.returnValue = false;
+
+                    var eTarget = e.target || e.srcElement;
+
+                    var clickedListItem = closest(eTarget, function(el) {
+                        return el.tagName === 'A';
+                    });
+
+                    if(!clickedListItem) {
+                        return;
+                    }
+
+                    var clickedGallery = clickedListItem.parentNode;
+
+                    var childNodes = clickedListItem.parentNode.childNodes,
+                        numChildNodes = childNodes.length,
+                        nodeIndex = 0,
+                        index;
+
+                    for (var i = 0; i < numChildNodes; i++) {
+                        if(childNodes[i].nodeType !== 1) { 
+                            continue; 
+                        }
+
+                        if(childNodes[i] === clickedListItem) {
+                            index = nodeIndex;
+                            break;
+                        }
+                        nodeIndex++;
+                    }
+
+                    if(index >= 0) {
+                        openPhotoSwipe( index, clickedGallery );
+                    }
+                    return false;
+                };
+
+                var photoswipeParseHash = function() {
+                    var hash = window.location.hash.substring(1),
+                    params = {};
+
+                    if(hash.length < 5) { // pid=1
+                        return params;
+                    }
+
+                    var vars = hash.split('&');
+                    for (var i = 0; i < vars.length; i++) {
+                        if(!vars[i]) {
+                            continue;
+                        }
+                        var pair = vars[i].split('=');  
+                        if(pair.length < 2) {
+                            continue;
+                        }           
+                        params[pair[0]] = pair[1];
+                    }
+
+                    if(params.gid) {
+                        params.gid = parseInt(params.gid, 10);
+                    }
+
+                    return params;
+                };
+
+                var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) {
+                    var pswpElement = document.querySelectorAll('.pswp')[0],
+                        gallery,
+                        options,
+                        items;
+
+                    items = parseThumbnailElements(galleryElement);
+
+                    // define options (if needed)
+                    options = {
+
+                        galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+
+                        getThumbBoundsFn: function(index) {
+                            // See Options->getThumbBoundsFn section of docs for more info
+                            var thumbnail = items[index].el.children[0],
+                                pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+                                rect = thumbnail.getBoundingClientRect(); 
+
+                            return {x:rect.left, y:rect.top + pageYScroll, w:rect.width};
+                        },
+
+                        addCaptionHTMLFn: function(item, captionEl, isFake) {
+                            if(!item.title) {
+                                captionEl.children[0].innerText = '';
+                                return false;
+                            }
+                            captionEl.children[0].innerHTML = item.title +  '<br/>';
+                            return true;
+                        }
+                        
+                    };
+
+
+                    if(fromURL) {
+                        if(options.galleryPIDs) {
+                            // parse real index when custom PIDs are used 
+                            // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
+                            for(var j = 0; j < items.length; j++) {
+                                if(items[j].pid == index) {
+                                    options.index = j;
+                                    break;
+                                }
+                            }
+                        } else {
+                            options.index = parseInt(index, 10) - 1;
+                        }
+                    } else {
+                        options.index = parseInt(index, 10);
+                    }
+
+                    // exit if index not found
+                    if( isNaN(options.index) ) {
+                        return;
+                    }
+
+                    if(disableAnimation) {
+                        options.showAnimationDuration = 0;
+                    }
+
+                    // Pass data to PhotoSwipe and initialize it
+                    gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+
+                    // see: http://photoswipe.com/documentation/responsive-images.html
+                    var realViewportWidth,
+                        useLargeImages = false,
+                        firstResize = true,
+                        imageSrcWillChange;
+
+                    gallery.listen('beforeResize', function() {
+
+                        var dpiRatio = window.devicePixelRatio ? window.devicePixelRatio : 1;
+                        dpiRatio = Math.min(dpiRatio, 2.5);
+                        realViewportWidth = gallery.viewportSize.x * dpiRatio;
+
+
+                        if(realViewportWidth >= 1200 || (!gallery.likelyTouchDevice && realViewportWidth > 800) || screen.width > 1200 ) {
+                            if(!useLargeImages) {
+                                useLargeImages = true;
+                                imageSrcWillChange = true;
+                            }
+                            
+                        } else {
+                            if(useLargeImages) {
+                                useLargeImages = false;
+                                imageSrcWillChange = true;
+                            }
+                        }
+
+                        if(imageSrcWillChange && !firstResize) {
+                            gallery.invalidateCurrItems();
+                        }
+
+                        if(firstResize) {
+                            firstResize = false;
+                        }
+
+                        imageSrcWillChange = false;
+
+                    });
+
+                    gallery.listen('gettingData', function(index, item) {
+                        if( useLargeImages ) {
+                            item.src = item.o.src;
+                            item.w = item.o.w;
+                            item.h = item.o.h;
+                        } 
+                        // else {
+                        //     item.src = item.m.src;
+                        //     item.w = item.m.w;
+                        //     item.h = item.m.h;
+                        // }
+                    });
+
+                    gallery.init();
+                };
+
+                // select all gallery elements
+                var galleryElements = document.querySelectorAll( gallerySelector );
+                for(var i = 0, l = galleryElements.length; i < l; i++) {
+                    galleryElements[i].setAttribute('data-pswp-uid', i+1);
+                    galleryElements[i].onclick = onThumbnailsClick;
+                }
+
+                // Parse URL and open gallery if it contains #&pid=3&gid=1
+                var hashData = photoswipeParseHash();
+                if(hashData.pid && hashData.gid) {
+                    openPhotoSwipe( hashData.pid,  galleryElements[ hashData.gid - 1 ], true, true );
+                }
+            };
+
+            initPhotoSwipeFromDOM('.demo-gallery');
+
+        })();
+
+        </script>
+        <div style='clear:both;'>&nbsp;</div>
+  <footer>Tom Meyer &amp; Charlie Meyer 2016<br>
+         <small>Uses <a href='http://photoswipe.com/'>PhotoSwipe</a> JS Plugin</small></footer>
 </body>
 </html>
